@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+</head>
+
+<body>
+    <div class="flex flex-col items-center justify-center w-1/2 p-4 mx-auto mt-4 space-y-3 bg-gray-200 ">
+        <h1 class="font-bold text-3" data-th-text="${name}">
+             Welcome to Home page
+        </h1>
+        <p class="text-xl text-gray-700">
+            EverFarm Project : <span data-th-text="${EverFarmProject}"></span>
+        </p>
+        <p>
+            Github Repository Link : <span th:text="${GithubRepository}"></span>
+        </p>
+
+        <a data-th-text="${GithubRepository}">
+            Click here to open
+        </a>
+        
+        <p class="text-xl text-gray-700">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, rem. Vero quae minus fugit nobis. Harum
+            dolores sequi neque corrupti temporibus quos quaerat, eveniet hic sint. Doloremque dolorum pariatur veniam
+            quibusdam neque ex sint eligendi ipsam laudantium consequatur ipsum, iure tempora, mollitia doloribus
+            assumenda temporibus porro fugiat ut nesciunt odit?
+        </p>
+        <div>
+        <button class="px-3 py-2 text-white bg-blue-700 rounded hover:bg-blue-600">
+            Click Here
+        </button>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>
